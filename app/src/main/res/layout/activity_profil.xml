@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Beranda">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/shopping_bag"
+                    android:background="@drawable/button_profil"
+                    android:layout_marginStart="60dp"
+                    />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/foto_profil"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/button_profil"
+                    />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/menu"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/button_profil"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_sans_semi_bold"
+                android:text="Settings"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_login"
+                android:backgroundTint="@color/abu3">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/iconuser"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginStart="10dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Account"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:textColor="@color/abu5"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Personal information"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/abu2"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_login"
+                android:backgroundTint="@color/abu4">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/iconlocation"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginStart="10dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:textColor="@color/abu5"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shippings addresses"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/abu2"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_login"
+                android:backgroundTint="@color/abu4">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/iconpayment"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginStart="10dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment method"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:textColor="@color/abu5"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Connected credit cards"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/abu2"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_login"
+                android:backgroundTint="@color/abu4">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/iconsecurity"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginStart="10dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Security"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:textColor="@color/abu5"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password, 2FA"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/abu2"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_sans_semi_bold"
+                android:text="Account"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="960dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape_login"
+                android:backgroundTint="@color/abu4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal information"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avatar"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/nunito_sans_semi_bold"
+                    android:textSize="12sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="5dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/foto_profil"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="45dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/shape_login"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginStart="19dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Change"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/nunito_sans_bold"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="45dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/shape_login"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginStart="19dp"
+                        android:backgroundTint="@color/white"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remove"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/nunito_sans_bold"
+                            android:textColor="@color/abu1"
+                            android:textSize="14sp"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semi_bold"
+                        android:text="First name"
+                        android:textColor="@color/abu1"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        >
+
+                        <EditText
+                            android:layout_width="300dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/shape_email"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/abu1"
+                            android:fontFamily="@font/nunito_sans_regular"
+                            android:textSize="14sp"
+                            android:hint="Sulistina                                                        "
+                            android:backgroundTint="@color/white"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="17dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semi_bold"
+                        android:text="Last name"
+                        android:textColor="@color/abu1"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        >
+
+                        <EditText
+                            android:layout_width="300dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/shape_email"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/abu1"
+                            android:fontFamily="@font/nunito_sans_regular"
+                            android:textSize="14sp"
+                            android:backgroundTint="@color/white"
+                            android:hint="Nabilla                                                         "
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="17dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semi_bold"
+                        android:text="Email"
+                        android:textColor="@color/abu1"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        >
+
+                        <EditText
+                            android:layout_width="300dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/shape_email"
+                            android:backgroundTint="@color/white"
+                            android:fontFamily="@font/nunito_sans_regular"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/abu1"
+                            android:textSize="14sp"
+                            android:hint="sulistinanabilla@gmail.com                         "/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="17dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semi_bold"
+                        android:text="Phone number"
+                        android:textColor="@color/abu1"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        >
+
+                        <EditText
+                            android:layout_width="300dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/shape_email"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/abu1"
+                            android:fontFamily="@font/nunito_sans_regular"
+                            android:textSize="14sp"
+                            android:backgroundTint="@color/white"
+                            android:hint="0895-0216-7524"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email notifications"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="15dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:layout_marginTop="43dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/default_ceklis"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New deals"
+                        android:textColor="@color/abu2"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:textSize="14sp"
+                        android:layout_marginStart="12dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/default_ceklis"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New shop"
+                        android:textColor="@color/abu2"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:textSize="14sp"
+                        android:layout_marginStart="12dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/default_ceklis"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order statuses"
+                        android:textColor="@color/abu2"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:textSize="14sp"
+                        android:layout_marginStart="12dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/default_ceklis"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password changes"
+                        android:textColor="@color/abu2"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:textSize="14sp"
+                        android:layout_marginStart="12dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/default_ceklis"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password changes"
+                        android:textColor="@color/abu2"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:textSize="14sp"
+                        android:layout_marginStart="12dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/default_ceklis"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Newsletter"
+                        android:textColor="@color/abu2"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:textSize="14sp"
+                        android:layout_marginStart="12dp"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="57dp"
+                    android:textColorHint="@color/white"
+                    android:hint="Log out"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/red"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:textSize="15sp"
+                    android:layout_marginTop="25dp"
+                    android:onClick="logout"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <Button
+                        android:layout_width="140dp"
+                        android:layout_height="57dp"
+                        android:textColorHint="@color/abu1"
+                        android:hint="Discard changes"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:textSize="11sp"
+                        android:layout_marginTop="15dp"
+                        />
+
+                    <Button
+                        android:layout_width="140dp"
+                        android:layout_height="57dp"
+                        android:textColorHint="@color/white"
+                        android:hint="Save changes"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/ungu_1"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:textSize="11sp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="15dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

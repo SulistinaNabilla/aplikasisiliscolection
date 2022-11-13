@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Beranda">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/shopping_bag"
+                    android:background="@drawable/button_profil"
+                    android:layout_marginStart="60dp"
+                    />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/foto_profil"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/button_profil"
+                    android:id="@+id/profil"
+                    android:onClick="profil"
+                    />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/menu"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/button_profil"
+                    />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="370dp"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/button_profil">
+
+                <LinearLayout
+                    android:layout_width="360dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="All dress"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/nunito_sans_semi_bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="17dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fasion"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/abu1"
+                        android:layout_marginStart="190dp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20% OFF"
+                    android:textSize="40sp"
+                    android:fontFamily="@font/nunito_sans_extra_bold"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/biru"/>
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/dress1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="75dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="370dp"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/button_profil"
+                android:backgroundTint="@color/pink">
+
+                <LinearLayout
+                    android:layout_width="360dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hoodie"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/nunito_sans_semi_bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="17dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Atasan"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/abu1"
+                        android:layout_marginStart="205dp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50% OFF"
+                    android:textSize="40sp"
+                    android:fontFamily="@font/nunito_sans_extra_bold"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/orange"/>
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/hoodie"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="75dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/shape_login"
+                    android:backgroundTint="@color/abu3">
+
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/jacket"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jacket"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/abu2"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/shape_login"
+                    android:backgroundTint="@color/biru2">
+
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/hoodie"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hoodie"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/biru"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/shape_login"
+                    android:backgroundTint="@color/abu3">
+
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/rok"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rok"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/abu2"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/shape_login"
+                    android:backgroundTint="@color/biru2">
+
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/bawahan"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bawahan"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/biru"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/shape_login"
+                    android:backgroundTint="@color/abu3">
+
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/atasan1"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Atasan"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/abu2"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/shape_login"
+                    android:backgroundTint="@color/biru2">
+
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/kaos"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kaos"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/biru"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/nunito_sans_semi_bold"
+                android:text="Sul-is Collection"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dressimport"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kemeja"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cardiganrajut"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
